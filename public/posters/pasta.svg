@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#2A1633"/>
+  <!-- Prato -->
+  <ellipse cx="200" cy="250" rx="140" ry="50" fill="#F0EDE8"/>
+  <ellipse cx="200" cy="245" rx="120" ry="40" fill="#E8E4DF"/>
+  <!-- Molho -->
+  <ellipse cx="200" cy="235" rx="70" ry="25" fill="#B8321F" opacity="0.8"/>
+  <!-- Fios de espaguete -->
+  <path d="M140,230 Q160,200 200,210 Q240,220 260,230" stroke="#EBC56B" stroke-width="3" fill="none"/>
+  <path d="M135,235 Q170,195 210,215 Q250,235 265,225" stroke="#EBC56B" stroke-width="3" fill="none"/>
+  <path d="M145,225 Q175,205 195,220 Q215,235 255,220" stroke="#EBC56B" stroke-width="3" fill="none"/>
+  <path d="M150,240 Q180,210 220,220 Q260,230 270,235" stroke="#EBC56B" stroke-width="2.5" fill="none"/>
+  <path d="M130,238 Q165,208 205,218 Q245,228 268,228" stroke="#EBC56B" stroke-width="2.5" fill="none"/>
+  <path d="M138,242 Q168,212 208,222 Q248,232 262,232" stroke="#EBC56B" stroke-width="2" fill="none"/>
+  <path d="M155,228 Q185,198 215,215 Q245,232 258,222" stroke="#EBC56B" stroke-width="2" fill="none"/>
+  <!-- Manjericao -->
+  <path d="M205,210 Q215,195 210,210 Q220,200 205,210 Z" fill="#3C7A4E"/>
+  <path d="M185,215 Q190,200 188,215 Q195,205 185,215 Z" fill="#3C7A4E"/>
+  <path d="M220,218 Q228,205 225,218 Q232,210 220,218 Z" fill="#3C7A4E"/>
+  <!-- Texto -->
+  <text x="200" y="340" text-anchor="middle" fill="#E8A33D" font-family="sans-serif" font-weight="800" font-size="22">do rolo ao prato</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#2A1633"/>
+  <!-- Pao de baixo -->
+  <ellipse cx="200" cy="280" rx="100" ry="20" fill="#D9913F"/>
+  <!-- Carne -->
+  <ellipse cx="200" cy="260" rx="95" ry="18" fill="#5A2E1B"/>
+  <!-- Queijo -->
+  <polygon points="95,248 305,248 310,255 90,255" fill="#F2B233"/>
+  <!-- Tomate -->
+  <ellipse cx="175" cy="240" rx="30" ry="6" fill="#C8302B"/>
+  <ellipse cx="225" cy="240" rx="30" ry="6" fill="#C8302B"/>
+  <!-- Alface -->
+  <path d="M100,232 Q130,220 160,232 Q190,220 220,232 Q250,220 280,232 Q300,226 300,232 L100,232 Z" fill="#5FA05A"/>
+  <!-- Pao de cima -->
+  <path d="M105,228 Q110,170 200,165 Q290,170 295,228 Z" fill="#D9913F"/>
+  <!-- Gergelins -->
+  <ellipse cx="170" cy="190" rx="6" ry="3" fill="#F4E3B5" transform="rotate(-15 170 190)"/>
+  <ellipse cx="210" cy="180" rx="6" ry="3" fill="#F4E3B5" transform="rotate(10 210 180)"/>
+  <ellipse cx="240" cy="195" rx="6" ry="3" fill="#F4E3B5" transform="rotate(-5 240 195)"/>
+  <ellipse cx="185" cy="175" rx="6" ry="3" fill="#F4E3B5" transform="rotate(20 185 175)"/>
+  <!-- Texto -->
+  <text x="200" y="340" text-anchor="middle" fill="#E8A33D" font-family="sans-serif" font-weight="800" font-size="28">elfarofando</text>
+</svg>

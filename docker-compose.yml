@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: elfarofando-app
+    expose:
+      - "3000"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - app-network
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: elfarofando-tunnel
+    command: tunnel --config /tmp/cloudflared-config.yml run
+    volumes:
+      - ./cloudflared-config.yml:/tmp/cloudflared-config.yml:ro
+      - ${CLOUDFLARE_CREDENTIALS_PATH:-./.cloudflared}/:/etc/cloudflared/:ro
+    restart: unless-stopped
+    depends_on:
+      - app
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
